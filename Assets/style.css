@@ -38,6 +38,14 @@ body::-webkit-scrollbar-thumb {
     border: none;
     transition: 0.25s;
 }
+.btn-gray {
+    background-color: #E3E3E3;
+    padding: 13px 60px;
+    color: var(--black);
+    outline: none;
+    border: none;
+    transition: 0.25s;
+}
 
 .btn-red {
     background-color: var(--red);
@@ -46,15 +54,21 @@ body::-webkit-scrollbar-thumb {
     outline: none;
     border: none;
     transition: 0.25s;
+    text-decoration: none;
 }
 
 .btn-red:hover {
-    box-shadow: 0px 20px 40px rgb(0, 0, 0);
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.687);
+    text-decoration: none;
+    color: var(--white);
+}
+.btn-gray:hover {
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.687);
 }
 
 .btn-black:hover {
     background-color: #000;
-    box-shadow: 0px 20px 40px rgb(0, 0, 0);
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.694);
 }
 
 
@@ -79,12 +93,6 @@ body::-webkit-scrollbar-thumb {
     max-width: 900px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-}
-
-.element-header>h1,
-p {
-    text-align: center;
 }
 
 .element-header>h1 {
@@ -115,7 +123,13 @@ p {
 .active_header .nav-link {
     color: var(--black);
 }
+.header_white .nav-link {
+    color: var(--black);
+}
 
+.header_white .login {
+    color: var(--black) !important;
+}
 .active_header .login {
     color: var(--black) !important;
 }
@@ -146,14 +160,30 @@ p {
     background-size: cover;
     background-position: center;
 }
-
+#bookingTaxi {
+    height: 100vh;
+    width: 100%;
+    background-image: url(./BookingTaxi.png);
+    background-size: cover;
+    background-position: center;
+}
+.input-field > input{
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    padding: 15px;
+    border: none;
+}
+.cabee_hero{
+    margin-top: 15vh;
+}
 .tagline {
     font-size: 60px;
     font-weight: 800;
 }
 
 .hero-buttons {
-    margin-top: 25vh;
+    margin-top: 10vh;
 }
 
 
@@ -173,6 +203,27 @@ p {
 /* Testimonials */
 .gallery {
     width: 100%;
+}
+
+
+
+
+
+/* Driver App */
+.how-app-bg{
+    background-image: url("./icons/driver/how-app-bg.webp");
+}
+.icon-steps{
+    background-color: var(--red);
+    padding: 15px; 
+    width: 100%;
+    border-radius: 10px;
+}
+.icon-steps > img{
+    width: 100%;
+}
+.drv-i > img{
+    height: 80px;
 }
 
 .gallery-container {
@@ -366,6 +417,21 @@ p {
 .cImg {
     height: 80px;
 }
+
+
+
+
+/* Booking Taxi */
+.b-icon{
+    width: 50px;
+    padding: 10px;
+    border-radius: 100px;
+    background-color: var(--red);
+}
+.b-icon > img{
+    width: 100%;
+}
+
 
 
 /* Footer */
